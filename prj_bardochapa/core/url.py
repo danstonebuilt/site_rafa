@@ -1,12 +1,8 @@
 __author__ = 'daniel.anselmo'
 
-
-from django.conf.urls import include, url
-from django.contrib import admin
-from core.views import show_path
-
+from django.conf.urls import url
 
 urlpatterns = [
-    url(r'^home/',show_path),
+    url(r'^home/', 'core.views.homepage'),
+    url(r'^path/', 'core.views.show_path')
 ]
-

@@ -86,7 +86,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'UTC'
 
@@ -102,11 +102,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-"""
+CORE_PATH =  os.path.join( BASE_DIR, 'core', )
+
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join( os.path.dirname(__file__), 'static',  ),
+    #os.path.join( CORE_PATH, 'static', ).replace('\\', '/'),
+    'C:/Users/daniel.anselmo/Desktop/workstation/site_rafa/prj_bardochapa/core/static',
 )
-"""
