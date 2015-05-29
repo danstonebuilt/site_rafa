@@ -1,25 +1,40 @@
 {% load static %}
 <header>
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-          <div class="navbar-inner">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-               </button>
-          </div>
+    <div class="jumbotron skull-mini">
+            <div class="container fundo-logo">
+                <img src="{% static 'images/logo.png' %}">
+            </div>
+        </div>
+    	<div class="navbar navbar-default footer-collor">
+    		<div class="container">
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button>
+    				<a href="#" class="navbar-brand active">Bar do Chapa</a>
+    			</div>
 
-          <div class="navbar-collapse collapse">
-               <ul class="nav navbar-nav">
-                   <li ><a href="#"><img src="{% static 'images/logo.png' %}"/></a></li>
-                    <li ><a href="#"><b>Fotos</b></a></li>
-                    <li ><a href="#"><b>Contatos</b></a></li>
-               </ul>
-          </div>
-      </nav>
-</header>
+    			<div class="collapse navbar-collapse" id="example">
+    				<ul class="nav navbar-nav">
+    					<li class="active"><a href="#">Pratos</a></li>
+    					<li><a href="#">Fotos</a></li>
+    					<li><a href="#">Contato</a></li>
+    				</ul>
+    			</div>
+
+    		</div>
+    	</div>
+<!--
+        <div class="jumbotron">
+            <div class="container">
+                <h2>Venha conhecer nossos pratos mexicanos!</h2>
+            </div>
+        </div>
+        -->
+    </header>
 
 
-</div>
+
 

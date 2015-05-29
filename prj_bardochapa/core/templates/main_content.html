@@ -1,23 +1,51 @@
 {% load static %}
-     <!-- Main content -->
+<!-- Main content -->
 
-       <div id="crsl" class="carousel slide" data-ride="carousel">
-           <ol class="carousel-indicators">
-               <li data-target="#crsl" data-slide-to="0" class="active"></li>
-               <li data-target="#crsl" data-slide-to="1"></li>
-               <li data-target="#crsl" data-slide-to="2"></li>
-           </ol>
-            <div class="carousel-inner">
-                <div class="item active"><img src="{% static 'images/2.jpg' %}" width="100%"/></div>
-                <div class="item"><img src="{% static 'images/3.jpg' %}" width="100%"/></div>
-                <div class="item"><img src="{% static 'images/4.jpg' %}" width="100%"/></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <div class="well col1-atr"></div>
+        </div>
+
+        <div class="col-lg-8 col-md-8 col-sm-8">
+            <div class="well col2-atr">
+                <div id="crsl" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#crsl" data-slide-to="0" class="active"></li>
+                        <li data-target="#crsl" data-slide-to="1"></li>
+                        <li data-target="#crsl" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item active"><img src="{% static 'images/2.jpg' %}" width="100%" height="720px"/>
+                        </div>
+                        <div class="item"><img src="{% static 'images/3.jpg' %}" width="100%" height="720px"/></div>
+                        <div class="item"><img src="{% static 'images/4.jpg' %}" width="100%" height="720px"/></div>
+                    </div>
+
+                    <a class="left carousel-control" href="#crsl" data-slide="prev"><span
+                            class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#crsl" data-slide="next"><span
+                            class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
             </div>
+        </div>
 
-            <a class="left carousel-control" href="#crsl"  data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="right carousel-control" href="#crsl"  data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-       </div>
-<br />
-<br />
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <div class="well col3-atr"></div>
+        </div>
+    </div>
+</div>
+<div class="jumbotron fundo-logo">
+    <div class="container">
+        <h2>Venha conhecer nossos pratos mexicanos!
+        </h2>
+    </div>
+</div>
+
+<br/>
+<br/>
 
 
 
